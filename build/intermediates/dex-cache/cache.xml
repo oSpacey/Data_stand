@@ -2,11 +2,74 @@
 <items version="2" >
 
     <item
+        jar="C:\Users\ID2013-03\Desktop\new_Android_App-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\ID2013-03\Desktop\new_Android_App-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_aa29482689489e11bc8505ef4b24be9bd45ad21a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\ID2013-03\Desktop\new_Android_App-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\Users\ID2013-03\Desktop\new_Android_App-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_1354c1ed027c6d2aed3b594c6afa79d62d93420b\classes.dex" />
+    </item>
+    <item
         jar="C:\Users\ID2013-03\Desktop\new_Android_App-master\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="68f8b6a848ee075187493de99dd13307aa1949f3">
+        sha1="256fdd8f2b9ec1c42f5dbb17ac06888b8b0c1c28">
         <dex dex="C:\Users\ID2013-03\Desktop\new_Android_App-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_8c5b84b227923fa9be158014f0cc20f814d5e7e9\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\ID2013-03\Desktop\new_Android_App-master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="C:\Users\ID2013-03\Desktop\new_Android_App-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.0.0_a4ae98d7804c226ff36fa7232c79fb5cd0d6d3fd\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\ID2013-03\Desktop\new_Android_App-master\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="C:\Users\ID2013-03\Desktop\new_Android_App-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-21.0.3_ad610abb61c3b3940eea596e82c654481dfe0d02\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\ID2013-03\Desktop\new_Android_App-master\app\build\intermediates\exploded-aar\com.github.castorflex.verticalviewpager\library\19.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="cac65d41873c63e90b9406c9dbccc05b15113c45">
+        <dex dex="C:\Users\ID2013-03\Desktop\new_Android_App-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.castorflex.verticalviewpager-library-19.0.1_fce072bdfda1957e4ebe0317be598c80ae7dc617\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\ID2013-03\Desktop\new_Android_App-master\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="7e6dddb924b25c4396c32850364ece6fdca3199b">
+        <dex dex="C:\Users\ID2013-03\Desktop\new_Android_App-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_9035a3a12e7a295567ccee40c67dd09a3f6b1e83\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\ID2013-03\Desktop\new_Android_App-master\app\build\intermediates\exploded-aar\com.android.support\design\23.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8a5238e4bdcd6568b82db669d41817de670586b8">
+        <dex dex="C:\Users\ID2013-03\Desktop\new_Android_App-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.0.0_60d41e80abd51478bc95c8ef969f29800e0bfcb8\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\ID2013-03\Desktop\new_Android_App-master\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="5e412e954a24c5310a459c09870e4e2081aceb03">
+        <dex dex="C:\Users\ID2013-03\Desktop\new_Android_App-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.1.1_c05916d022636bc465a5b414b99384498a8327e4\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\ID2013-03\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="C:\Users\ID2013-03\Desktop\new_Android_App-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_d210c24ccf2595051f33daaf06fc9438679efaed\classes.dex" />
     </item>
 
 </items>
