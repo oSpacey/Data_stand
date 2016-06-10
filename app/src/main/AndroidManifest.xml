@@ -37,6 +37,16 @@
             android:theme="@style/chassisWin"></activity>
 
         <activity
+            android:name=".SPECIFICATION_TABS.POPUP.SPEC_POPUP.Performance_Data.Braking"
+            android:noHistory="true"
+            android:theme="@style/chassisWin"></activity>
+
+        <activity
+            android:name=".SPECIFICATION_TABS.POPUP.SPEC_POPUP.Performance_Data.Efficiency"
+            android:noHistory="true"
+            android:theme="@style/chassisWin"></activity>
+
+        <activity
             android:name=".Exclusivity_TABS.POPUP.EXCLUSIVITY_POPUP_MSO_DEFINED.Mso_Defined_Popup"
             android:noHistory="true"
             android:theme="@style/chassisWin"></activity>

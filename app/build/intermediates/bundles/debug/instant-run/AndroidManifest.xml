@@ -23,19 +23,27 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP.Powertrain"
+            android:name="com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP.Technical_Specification.Powertrain"
             android:noHistory="true"
             android:theme="@style/chassisWin" />
         <activity
-            android:name="com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP.Brakes"
+            android:name="com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP.Technical_Specification.Brakes"
             android:noHistory="true"
             android:theme="@style/chassisWin" />
         <activity
-            android:name="com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP.Body"
+            android:name="com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP.Technical_Specification.Body"
             android:noHistory="true"
             android:theme="@style/chassisWin" />
         <activity
-            android:name="com.example.id2013_03.android_app.SPECIFICATION_TABS.MAIN.Acceleration"
+            android:name="com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP.Performance_Data.Acceleration"
+            android:noHistory="true"
+            android:theme="@style/chassisWin" />
+        <activity
+            android:name="com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP.Performance_Data.Braking"
+            android:noHistory="true"
+            android:theme="@style/chassisWin" />
+        <activity
+            android:name="com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP.Performance_Data.Efficiency"
             android:noHistory="true"
             android:theme="@style/chassisWin" />
         <activity

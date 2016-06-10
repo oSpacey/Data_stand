@@ -48,7 +48,7 @@ public class Braking extends POPUP_Base {
         viewPager = (ViewPager) findViewById(R.id.exclusivity_pop_View);
         viewPager.setAdapter(new CustomAdapter(getSupportFragmentManager(), getApplicationContext()));
         viewPager.setOffscreenPageLimit(5);
-        viewPager.setCurrentItem(0);
+        viewPager.setCurrentItem(1);
 
         tabLayout = (TabLayout) findViewById(R.id.exclusivity_pop_Tabs);
         tabLayout.setupWithViewPager(viewPager);
