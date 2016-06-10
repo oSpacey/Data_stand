@@ -1,4 +1,4 @@
-package com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP;
+package com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP.Technical_Specification;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -17,7 +17,7 @@ import com.example.id2013_03.android_app.TABS.POPUP_Base;
 import static android.view.Gravity.BOTTOM;
 
 
-public class Brakes extends POPUP_Base {
+public class Body extends POPUP_Base {
 
     ViewPager viewPager;
     TabLayout tabLayout;
@@ -47,8 +47,8 @@ public class Brakes extends POPUP_Base {
 
         viewPager = (ViewPager) findViewById(R.id.exclusivity_pop_View);
         viewPager.setAdapter(new CustomAdapter(getSupportFragmentManager(), getApplicationContext()));
-        viewPager.setOffscreenPageLimit(2);
-        viewPager.setCurrentItem(1);
+        viewPager.setOffscreenPageLimit(5);
+        viewPager.setCurrentItem(2);
 
         tabLayout = (TabLayout) findViewById(R.id.exclusivity_pop_Tabs);
         tabLayout.setupWithViewPager(viewPager);

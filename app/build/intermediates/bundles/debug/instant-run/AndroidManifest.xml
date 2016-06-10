@@ -31,7 +31,7 @@
             android:noHistory="true"
             android:theme="@style/chassisWin" />
         <activity
-            android:name="com.example.id2013_03.android_app.SPEC_POPUP.TECHNICAL_SPECIFICATION.Body"
+            android:name="com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP.Body"
             android:noHistory="true"
             android:theme="@style/chassisWin" />
         <activity

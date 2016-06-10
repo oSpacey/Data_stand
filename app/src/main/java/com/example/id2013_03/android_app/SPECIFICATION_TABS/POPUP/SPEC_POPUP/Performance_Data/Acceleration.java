@@ -1,4 +1,4 @@
-package com.example.id2013_03.android_app.SPEC_POPUP.TECHNICAL_SPECIFICATION;
+package com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP.Performance_Data;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,15 +12,12 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.example.id2013_03.android_app.R;
-import com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP.Body_Content;
-import com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP.Brakes_Content;
-import com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP.Powertrain_Content;
+
 import com.example.id2013_03.android_app.TABS.POPUP_Base;
 
 import static android.view.Gravity.BOTTOM;
 
-
-public class Body extends POPUP_Base {
+public class Acceleration extends POPUP_Base {
 
     ViewPager viewPager;
     TabLayout tabLayout;
@@ -51,7 +48,7 @@ public class Body extends POPUP_Base {
         viewPager = (ViewPager) findViewById(R.id.exclusivity_pop_View);
         viewPager.setAdapter(new CustomAdapter(getSupportFragmentManager(), getApplicationContext()));
         viewPager.setOffscreenPageLimit(5);
-        viewPager.setCurrentItem(2);
+        viewPager.setCurrentItem(0);
 
         tabLayout = (TabLayout) findViewById(R.id.exclusivity_pop_Tabs);
         tabLayout.setupWithViewPager(viewPager);
@@ -82,7 +79,7 @@ public class Body extends POPUP_Base {
 
 
     private class CustomAdapter extends FragmentStatePagerAdapter {
-        private String fragments[] = {"Powertrain", "Chassis & Brakes", "Body"};
+        private String fragments[] = {"Acceleration", "Braking", "Efficiency"};
 
         public CustomAdapter(FragmentManager supportFragmentManager, Context applicationContext) {
             super(supportFragmentManager);
@@ -92,11 +89,11 @@ public class Body extends POPUP_Base {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    return new Powertrain_Content();
+                    return new Acceleration_Content();
                 case 1:
-                    return new Brakes_Content();
+                    return new Braking_Content();
                 case 2:
-                    return new Body_Content();
+                    return new Efficiency_Content();
                 default:
                     return null;
             }

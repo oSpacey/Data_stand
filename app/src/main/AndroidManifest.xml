@@ -17,22 +17,22 @@
         </activity>
 
         <activity
-            android:name=".SPECIFICATION_TABS.POPUP.SPEC_POPUP.Powertrain"
+            android:name=".SPECIFICATION_TABS.POPUP.SPEC_POPUP.Technical_Specification.Powertrain"
             android:noHistory="true"
             android:theme="@style/chassisWin"></activity>
 
         <activity
-            android:name=".SPECIFICATION_TABS.POPUP.SPEC_POPUP.Brakes"
+            android:name=".SPECIFICATION_TABS.POPUP.SPEC_POPUP.Technical_Specification.Brakes"
             android:noHistory="true"
             android:theme="@style/chassisWin"></activity>
 
         <activity
-            android:name=".SPEC_POPUP.TECHNICAL_SPECIFICATION.Body"
+            android:name=".SPECIFICATION_TABS.POPUP.SPEC_POPUP.Technical_Specification.Body"
             android:noHistory="true"
             android:theme="@style/chassisWin"></activity>
 
         <activity
-            android:name=".SPECIFICATION_TABS.MAIN.Acceleration"
+            android:name=".SPECIFICATION_TABS.POPUP.SPEC_POPUP.Performance_Data.Acceleration"
             android:noHistory="true"
             android:theme="@style/chassisWin"></activity>
 

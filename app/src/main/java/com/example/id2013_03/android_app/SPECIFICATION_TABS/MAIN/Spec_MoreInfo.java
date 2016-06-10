@@ -12,13 +12,14 @@ import android.view.ViewTreeObserver;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RadioButton;
-import android.widget.Toast;
 
 import com.example.id2013_03.android_app.R;
-import com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP.Brakes;
-import com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP.Powertrain;
-import com.example.id2013_03.android_app.SPEC_POPUP.TECHNICAL_SPECIFICATION.Body;
-
+import com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP.Performance_Data.Braking;
+import com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP.Performance_Data.Efficiency;
+import com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP.Technical_Specification.Body;
+import com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP.Technical_Specification.Brakes;
+import com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP.Performance_Data.Acceleration;
+import com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP.Technical_Specification.Powertrain;
 
 import fr.castorflex.android.verticalviewpager.VerticalViewPager;
 
@@ -150,14 +151,16 @@ public class Spec_MoreInfo extends Fragment {
                                 This buttons simply display a message to the users
      ---------------------------------------------------------------------------------------------------------------------------
 */
+
         body_fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Open pop up window
+                // Open Pop up window
                 Intent i = new Intent(getActivity(), Body.class);
                 startActivity(i);
             }
         });
+
         acceleration_fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -166,16 +169,20 @@ public class Spec_MoreInfo extends Fragment {
                 startActivity(i);
             }
         });
+
         braking_fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity().getApplicationContext(), "Not yet implemented", Toast.LENGTH_LONG).show();
+                // Open pop up window
+                Intent i = new Intent(getActivity(), Braking.class);
+                startActivity(i);
             }
         });
         efficiency_fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity().getApplicationContext(), "Not yet implemented", Toast.LENGTH_LONG).show();
+                Intent i = new Intent(getActivity(), Efficiency.class);
+                startActivity(i);
             }
         });
 

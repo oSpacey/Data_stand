@@ -3,32 +3,20 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/heritage_title"
-        android:layout_width="630dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="-5dp"
-        android:background="@color/lighterGrey"/>
-
-    <Button
-        android:id="@+id/braking_text"
+    <ImageView
+        android:id="@+id/braking_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="15dp"
-        android:text="Braking"
-        android:textSize="35dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:background="@null"
-        android:textColor="@color/Grey"/>
+        android:layout_marginTop="-5dp"
+        android:src="@drawable/braking_title"/>
 
     <ImageView
         android:id="@+id/mso_sports_text"
-        android:layout_width="647dp"
-        android:layout_height="840dp"
-        android:layout_below="@+id/heritage_title"
-        android:layout_marginTop="-23dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/braking_title"
+        android:layout_marginLeft="-5dp"
+        android:src="@drawable/braking_text"/>
 
     <ImageView
         android:layout_width="1900dp"

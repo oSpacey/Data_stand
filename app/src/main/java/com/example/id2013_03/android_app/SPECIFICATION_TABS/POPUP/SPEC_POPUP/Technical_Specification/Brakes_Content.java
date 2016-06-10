@@ -1,4 +1,4 @@
-package com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP;
+package com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP.Technical_Specification;
 
 import android.media.MediaPlayer;
 import android.net.Uri;
@@ -25,11 +25,6 @@ public class Brakes_Content extends Fragment {
 
         VV = (VideoView)rootView.findViewById(R.id.videoView);
         String UriPath = "android.resource://com.example.id2013_03.android_app/" + R.raw.chassis;
-
-        CustomMediaController CMC = new CustomMediaController(getActivity());
-        CMC.setAnchorView(VV);
-
-        VV.setMediaController(CMC);
         Uri uri = Uri.parse(UriPath);
 
         VV.setVideoURI(uri);

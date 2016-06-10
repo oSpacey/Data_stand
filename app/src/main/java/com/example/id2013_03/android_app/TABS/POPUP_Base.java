@@ -9,7 +9,6 @@ import com.example.id2013_03.android_app.R;
 
 public class POPUP_Base extends AppCompatActivity {
 
-    ViewPager viewPager;
 
     public static final long DISCONNECT_TIMEOUT = 180000; // 5 min = 5 * 60 * 1000 ms
 
@@ -24,8 +23,7 @@ public class POPUP_Base extends AppCompatActivity {
         @Override
         public void run() {
             // Perform any required operation on disconnect
-            viewPager = (ViewPager)findViewById(R.id.viewPager);
-            viewPager.setCurrentItem(0);
+            finish();
         }
     };
 

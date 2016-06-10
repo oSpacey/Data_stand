@@ -1,4 +1,4 @@
-package com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP;
+package com.example.id2013_03.android_app.SPECIFICATION_TABS.POPUP.SPEC_POPUP.Technical_Specification;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

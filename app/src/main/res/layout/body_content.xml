@@ -12,10 +12,11 @@
 
     <ImageView
         android:id="@+id/mso_sports_text"
-        android:layout_width="647dp"
-        android:layout_height="840dp"
-        android:layout_below="@+id/heritage_title"
-        android:layout_marginTop="-23dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/body_title"
+        android:layout_marginLeft="-5dp"
+        android:src="@drawable/body_text"/>
 
     <ImageView
         android:layout_width="1900dp"
@@ -24,8 +25,5 @@
         android:layout_marginLeft="630dp"
         android:scaleType="fitXY"
         android:src="@drawable/body" />
-
-
-
 
 </RelativeLayout>
