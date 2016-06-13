@@ -13,11 +13,12 @@
 
     <ImageView
         android:id="@+id/mso_sports_text"
-        android:layout_width="647dp"
-        android:layout_height="840dp"
-        android:src="@drawable/mso_bespoke_intro_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/bespoke_title"
-        android:layout_marginTop="-20dp"/>
+        android:layout_marginLeft="-17dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/popup_intro"/>
 
     <ImageView
         android:layout_width="1900dp"

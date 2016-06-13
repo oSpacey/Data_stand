@@ -27,7 +27,7 @@ public class Mso_Bespoke_Popup extends POPUP_Base {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mso_bespoke_popup);
+        setContentView(R.layout.bespoke_popup_main);
 
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);

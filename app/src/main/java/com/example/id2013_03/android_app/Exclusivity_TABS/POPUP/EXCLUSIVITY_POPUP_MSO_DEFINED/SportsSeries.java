@@ -23,7 +23,7 @@ public class SportsSeries extends Fragment {
     ScrollView sportsTextScroll;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.mso_defined_sports_series, container, false);
+        View rootView = inflater.inflate(R.layout.defined_popup_sports_series, container, false);
 
         frontOfCar = (ImageView)rootView.findViewById(R.id.front_of_car);
         doorOfCar = (ImageView)rootView.findViewById(R.id.door_of_car);

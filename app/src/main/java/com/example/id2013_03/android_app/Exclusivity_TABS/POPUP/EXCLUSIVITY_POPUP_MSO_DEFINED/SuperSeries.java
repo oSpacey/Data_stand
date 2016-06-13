@@ -18,7 +18,7 @@ public class SuperSeries extends Fragment {
     ImageView backOfCar;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.mso_defined_super_series, container, false);
+        View rootView = inflater.inflate(R.layout.defined_popup_super_series, container, false);
 
         car01 = (ImageView)rootView.findViewById(R.id.car_01);
         car02 = (ImageView)rootView.findViewById(R.id.car_02);

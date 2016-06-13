@@ -28,7 +28,7 @@
             android:id="@+id/sports_text_main"
             android:layout_width="647dp"
             android:layout_height="840dp"
-            android:src="@drawable/mso_defined_sports_text"
+            android:src="@drawable/exclusivity_mso_super_text"
             android:layout_marginTop="0dp"
             android:layout_marginLeft="-5dp"/>
 

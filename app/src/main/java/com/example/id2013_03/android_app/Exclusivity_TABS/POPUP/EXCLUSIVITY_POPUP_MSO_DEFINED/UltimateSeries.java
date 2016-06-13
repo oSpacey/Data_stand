@@ -11,7 +11,7 @@ import com.example.id2013_03.android_app.R;
 
 public class UltimateSeries extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.mso_defined_ultimate, container, false);
+        View rootView = inflater.inflate(R.layout.defined_popup_ultimate, container, false);
 
         return rootView;
     }

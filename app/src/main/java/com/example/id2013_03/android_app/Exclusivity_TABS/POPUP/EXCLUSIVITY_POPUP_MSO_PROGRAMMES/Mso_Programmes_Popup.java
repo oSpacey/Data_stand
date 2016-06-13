@@ -24,7 +24,7 @@ public class Mso_Programmes_Popup extends POPUP_Base{
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mso_programmes_popup);
+        setContentView(R.layout.programmes_popup_main);
 
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);

@@ -14,7 +14,7 @@ import com.example.id2013_03.android_app.R;
 public class Introduction_Heritage extends Fragment {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.mso_heritage_intro, container, false);
+        View rootView = inflater.inflate(R.layout.heritage_popup_introduction, container, false);
 
         return rootView;
     }
