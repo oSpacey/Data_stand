@@ -71,6 +71,16 @@
             android:noHistory="true"
             android:theme="@style/chassisWin"></activity>
 
+        <activity
+            android:name=".USER_LOGIN.Login"
+            android:noHistory="true"
+            android:theme="@style/chassisWin"></activity>
+
+        <activity
+            android:name=".USER_LOGIN.User_PickCar"
+            android:noHistory="true"
+            android:theme="@style/chassisWin"></activity>
+
     </application>
 
 </manifest>

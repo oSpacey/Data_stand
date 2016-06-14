@@ -67,6 +67,14 @@
             android:noHistory="true"
             android:theme="@style/chassisWin" />
         <activity
+            android:name="com.example.id2013_03.android_app.USER_LOGIN.Login"
+            android:noHistory="true"
+            android:theme="@style/chassisWin" />
+        <activity
+            android:name="com.example.id2013_03.android_app.USER_LOGIN.User_PickCar"
+            android:noHistory="true"
+            android:theme="@style/chassisWin" />
+        <activity
             android:name="android.support.v7.widget.TestActivity"
             android:label="RecyclerViewTestActivity" />
     </application>
