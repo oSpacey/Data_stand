@@ -8,15 +8,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-5dp"
-        android:src="@drawable/mso_limited_title"/>
+        android:src="@drawable/mso_programmes_title"/>
+
 
     <ImageView
         android:id="@+id/mso_sports_text"
-        android:layout_width="647dp"
-        android:layout_height="840dp"
-        android:src="@drawable/mso_limited_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/heritage_title"
-        android:layout_marginTop="-23dp"/>
+        android:layout_marginLeft="-17dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/mso_programmes_fitness_text"/>
 
     <ImageView
         android:layout_width="1900dp"
@@ -24,7 +26,6 @@
         android:layout_marginTop="-30dp"
         android:layout_marginLeft="630dp"
         android:scaleType="fitXY"
-        android:src="@drawable/mso_limited_image" />
-
+        android:src="@drawable/mso_programmes_fitness_image" />
 
 </RelativeLayout>

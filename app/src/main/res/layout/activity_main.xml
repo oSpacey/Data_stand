@@ -79,7 +79,7 @@
         android:textColor="@color/white" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/logo_button"
         android:layout_width="225dp"
         android:layout_height="20dp"
         android:layout_above="@+id/viewPager"

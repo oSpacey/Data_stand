@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.NestedScrollView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -36,6 +37,7 @@ public class Spec_MoreInfo extends Fragment {
      ---------------------------------------------------------------------------------------------------------------------------
 */
     VerticalViewPager verticalViewPager;
+    ViewPager viewPager;
 
     NestedScrollView childSV;
 
@@ -76,6 +78,10 @@ public class Spec_MoreInfo extends Fragment {
      ---------------------------------------------------------------------------------------------------------------------------
 */
         verticalViewPager = (VerticalViewPager)getActivity().findViewById(R.id.vert_view_spec);
+
+        viewPager = (ViewPager)getActivity().findViewById(R.id.viewPager);
+
+
 
         childSV = (NestedScrollView) rootView.findViewById(R.id.child_scroll);
 
@@ -329,6 +335,8 @@ public class Spec_MoreInfo extends Fragment {
                 childSV.scrollTo(0, 0);
             }
         });
+
+
 
 /*
      ---------------------------------------------------------------------------------------------------------------------------

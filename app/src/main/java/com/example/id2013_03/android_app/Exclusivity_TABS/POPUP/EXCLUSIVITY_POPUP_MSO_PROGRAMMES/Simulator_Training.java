@@ -8,9 +8,7 @@ import android.view.ViewGroup;
 
 import com.example.id2013_03.android_app.R;
 
-/**
- * Created by ID2013-03 on 31/05/2016.
- */
+
 public class Simulator_Training extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.programmes_popup_simulator, container, false);

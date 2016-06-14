@@ -5,7 +5,7 @@
         jar="J:\new_Android_App-master\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="39758fcd83f04f287974a2a9d63989e30d1f3a1a">
+        sha1="b0e66f929b95feb42cc255e395511df8476bd5ef">
         <dex dex="J:\new_Android_App-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_e731a33415c56ea913f23a710f87d97c1ca8ad82\classes.dex" />
     </item>
     <item
@@ -16,18 +16,18 @@
         <dex dex="J:\new_Android_App-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_c20212068afd87dcfdef4477fcfaa58cc13ab2d6\classes.dex" />
     </item>
     <item
-        jar="J:\new_Android_App-master\app\build\intermediates\exploded-aar\com.android.support\design\23.0.0\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="8a5238e4bdcd6568b82db669d41817de670586b8">
-        <dex dex="J:\new_Android_App-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.0.0_7000c07629bde4a736127476366e60d2dea44331\classes.dex" />
-    </item>
-    <item
         jar="J:\new_Android_App-master\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\jars\classes.jar"
         jumboMode="true"
         revision="23.0.3"
         sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
         <dex dex="J:\new_Android_App-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-21.0.3_d21e3d953b8cb621c6819082c75d1c351795dca3\classes.dex" />
+    </item>
+    <item
+        jar="J:\new_Android_App-master\app\build\intermediates\exploded-aar\com.android.support\design\23.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8a5238e4bdcd6568b82db669d41817de670586b8">
+        <dex dex="J:\new_Android_App-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.0.0_7000c07629bde4a736127476366e60d2dea44331\classes.dex" />
     </item>
     <item
         jar="J:\new_Android_App-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
@@ -47,7 +47,7 @@
         jar="J:\new_Android_App-master\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="2f05aee536cd75859f90b07769a846b19da18498">
+        sha1="58a382df1229c813569d6167824738cd881ad8b4">
         <dex dex="J:\new_Android_App-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_a81ede6f7ca6f9c129c9a028f3d5d9894736c29b\classes.dex" />
     </item>
     <item

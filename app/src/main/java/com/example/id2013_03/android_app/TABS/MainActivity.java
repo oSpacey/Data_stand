@@ -6,6 +6,7 @@ package com.example.id2013_03.android_app.TABS;
      ---------------------------------------------------------------------------------------------------------------------------
 */
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -13,11 +14,17 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v4.widget.NestedScrollView;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.id2013_03.android_app.R;
+import com.example.id2013_03.android_app.USER_LOGIN.Login;
+
+import fr.castorflex.android.verticalviewpager.VerticalViewPager;
 
 /*
      ---------------------------------------------------------------------------------------------------------------------------
@@ -32,6 +39,8 @@ public class MainActivity extends MAIN_Base {
      ---------------------------------------------------------------------------------------------------------------------------
 */
     ViewPager viewPager;
+    VerticalViewPager vertSpec;
+    ViewPager vertEx;
     TabLayout tabLayout;
 
     TextView specTx;
@@ -41,6 +50,8 @@ public class MainActivity extends MAIN_Base {
     TextView brochureTx;
 
     Typeface custom_font;
+
+    Button logoBtn;
 
 
 /*
@@ -93,9 +104,29 @@ public class MainActivity extends MAIN_Base {
         brochureTx = (TextView) findViewById(R.id.over_text);
         brochureTx.setTypeface(custom_font);
 
+        logoBtn = (Button)findViewById(R.id.logo_button);
+        logoBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                viewPager.setCurrentItem(0);
+            }
+        });
+        logoBtn.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                Intent i = new Intent(MainActivity.this, Login.class);
+                startActivity(i);
+
+                return true;
+            }
+        });
+
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         viewPager.setAdapter(new CustomAdapter(getSupportFragmentManager(), getApplicationContext()));
         viewPager.setOffscreenPageLimit(5);
+
+
+
 
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         tabLayout.setupWithViewPager(viewPager);
@@ -104,18 +135,36 @@ public class MainActivity extends MAIN_Base {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 viewPager.setCurrentItem(tab.getPosition());
-
+                viewPager.onRestoreInstanceState(savedInstanceState);
             }
 
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
                 viewPager.setCurrentItem(tab.getPosition());
+                viewPager.onRestoreInstanceState(savedInstanceState);
+                vertSpec = (VerticalViewPager) findViewById(R.id.vert_view_spec);
+                vertEx = (ViewPager)findViewById(R.id.vert_view);
+                NestedScrollView nestScroll = (NestedScrollView)findViewById(R.id.child_scroll);
 
+                int vertSpecPage = viewPager.getCurrentItem();
+
+                if (vertSpecPage == 0) {
+                    vertSpec.setCurrentItem(0);
+                    nestScroll.scrollTo(0,0);
+                }
+
+                if(vertSpecPage == 2){
+                    vertEx.setCurrentItem(0);
+                }else
+                    return;
             }
 
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
                 viewPager.setCurrentItem(tab.getPosition());
+
+
+
 
             }
 
