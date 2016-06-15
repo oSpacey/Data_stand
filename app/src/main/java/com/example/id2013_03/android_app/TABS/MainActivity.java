@@ -104,6 +104,28 @@ public class MainActivity extends MAIN_Base {
         brochureTx = (TextView) findViewById(R.id.over_text);
         brochureTx.setTypeface(custom_font);
 
+/*
+     ---------------------------------------------------------------------------------------------------------------------------
+                                    Setting an on click function for the logo
+                                     displayed in the top right of the app
+
+                                   Short click and long click added to the logo
+
+                                               ** SHORT CLICK **
+                              Short click simply takes the users back to the first tab
+                                            acting as a "home button"
+
+                                               ** LONG CLICK **
+                          Long click closes the current app that the users are looking at
+                          and loads a login page.. This page is a hidden feature and only
+                                    the car dealers will know about this page.
+
+                                             For now Login is set to :
+                                             Username : Test
+                                             Password : password
+     ---------------------------------------------------------------------------------------------------------------------------
+*/
+
         logoBtn = (Button)findViewById(R.id.logo_button);
         logoBtn.setOnClickListener(new View.OnClickListener() {
             @Override

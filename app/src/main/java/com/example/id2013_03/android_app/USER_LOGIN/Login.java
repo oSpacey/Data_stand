@@ -3,7 +3,6 @@ package com.example.id2013_03.android_app.USER_LOGIN;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -27,7 +26,6 @@ public class Login extends Activity {
     // This is for the amount of times the salesmen has to login before the button blocks
     // This number can be changed to higher or lower
     int attempt_counter = 5;
-
 
     @Override
     // Declaring the layout for the Login page
@@ -84,6 +82,5 @@ public class Login extends Activity {
                 }
             }
         });
-
     }
 }
