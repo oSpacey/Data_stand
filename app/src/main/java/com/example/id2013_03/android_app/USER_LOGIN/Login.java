@@ -78,7 +78,8 @@ public class Login extends Activity {
                     attemps.setText(Integer.toString(attempt_counter));
                     if (attempt_counter == 0) {
                         login_button.setEnabled(false);
-                        finish();
+                        Intent i = new Intent(Login.this, MainActivity.class);
+                        startActivity(i);
                     }
                 }
             }

@@ -41,6 +41,7 @@ public class Powertrain extends POPUP_Base {
             @Override
             public void onClick(View v) {
                 finish();
+
             }
         });
 

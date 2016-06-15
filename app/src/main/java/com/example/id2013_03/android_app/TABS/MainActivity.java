@@ -114,6 +114,7 @@ public class MainActivity extends MAIN_Base {
         logoBtn.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
+                finish();
                 Intent i = new Intent(MainActivity.this, Login.class);
                 startActivity(i);
 
@@ -136,6 +137,23 @@ public class MainActivity extends MAIN_Base {
             public void onTabSelected(TabLayout.Tab tab) {
                 viewPager.setCurrentItem(tab.getPosition());
                 viewPager.onRestoreInstanceState(savedInstanceState);
+
+                vertSpec = (VerticalViewPager) findViewById(R.id.vert_view_spec);
+                vertEx = (ViewPager)findViewById(R.id.vert_view);
+                NestedScrollView nestScroll = (NestedScrollView)findViewById(R.id.child_scroll);
+
+                int vertSpecPage = viewPager.getCurrentItem();
+
+                if (vertSpecPage == 0) {
+                    vertSpec.setCurrentItem(0);
+                    nestScroll.scrollTo(0,0);
+                }
+
+                if(vertSpecPage == 2){
+                    vertEx.setCurrentItem(0);
+                }else
+                    return;
+
             }
 
             @Override
@@ -162,6 +180,22 @@ public class MainActivity extends MAIN_Base {
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
                 viewPager.setCurrentItem(tab.getPosition());
+                vertSpec = (VerticalViewPager) findViewById(R.id.vert_view_spec);
+                vertEx = (ViewPager)findViewById(R.id.vert_view);
+                NestedScrollView nestScroll = (NestedScrollView)findViewById(R.id.child_scroll);
+
+                int vertSpecPage = viewPager.getCurrentItem();
+
+                if (vertSpecPage == 0) {
+                    vertSpec.setCurrentItem(0);
+                    nestScroll.scrollTo(0,0);
+                }
+
+                if(vertSpecPage == 2){
+                    vertEx.setCurrentItem(0);
+                }else
+                    return;
+
 
 
 

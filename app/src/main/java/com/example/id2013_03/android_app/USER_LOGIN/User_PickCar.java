@@ -109,6 +109,7 @@ public class User_PickCar extends Activity{
                         Toast.makeText(getApplicationContext(),"Not yet implemented", Toast.LENGTH_LONG).show();
                         break;
                     case "570S":
+                        finish();
                         intent = new Intent(User_PickCar.this, MainActivity.class);
                         startActivity(intent);
                         break;
