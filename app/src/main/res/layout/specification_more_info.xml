@@ -24,31 +24,33 @@
 
     <android.support.v4.widget.NestedScrollView
         android:id="@+id/child_scroll"
-        android:layout_width="920dp"
-        android:layout_height="920dp"
+        android:layout_width="1050dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="false"
         android:layout_below="@+id/spec_backImg"
-        android:layout_marginRight="180dp">
+        android:layout_marginRight="500dp"
+        >
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            >
 
 
             <RelativeLayout
                 android:id="@+id/sideScroll"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="0dp">
 
                 <include
                     android:id="@+id/first"
                     layout="@layout/spec_page_technical_specs_card"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_below="@+id/spec_backImg"
                     android:layout_marginTop="78dp" />
 

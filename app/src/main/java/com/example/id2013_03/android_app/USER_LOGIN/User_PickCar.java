@@ -100,8 +100,7 @@ public class User_PickCar extends Activity{
                         Toast.makeText(getApplicationContext(),"Not yet implemented", Toast.LENGTH_LONG).show();
                         break;
                     case "650S Spider":
-                        intent = new Intent(User_PickCar.this, MainActivity.class);
-                        startActivity(intent);
+                        Toast.makeText(getApplicationContext(),"Not yet implemented", Toast.LENGTH_LONG).show();
                         break;
                     case "650S Coupe":
                         Toast.makeText(getApplicationContext(),"Not yet implemented", Toast.LENGTH_LONG).show();
@@ -110,7 +109,8 @@ public class User_PickCar extends Activity{
                         Toast.makeText(getApplicationContext(),"Not yet implemented", Toast.LENGTH_LONG).show();
                         break;
                     case "570S":
-                        Toast.makeText(getApplicationContext(),"Not yet implemented", Toast.LENGTH_LONG).show();
+                        intent = new Intent(User_PickCar.this, MainActivity.class);
+                        startActivity(intent);
                         break;
                     case "570 GT":
                         Toast.makeText(getApplicationContext(),"Not yet implemented", Toast.LENGTH_LONG).show();

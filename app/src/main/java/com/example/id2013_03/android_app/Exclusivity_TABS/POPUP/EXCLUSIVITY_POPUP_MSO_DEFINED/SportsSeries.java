@@ -36,7 +36,7 @@ public class SportsSeries extends Fragment {
         frontOfCar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sportsTextScroll.scrollTo(0, 680);
+                sportsTextScroll.scrollTo(0, 810);
                 frontOfCar.setBackgroundResource(R.drawable.exclusivity_oval_pressed);
                 doorOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
                 windowOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
@@ -48,7 +48,7 @@ public class SportsSeries extends Fragment {
         doorOfCar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sportsTextScroll.scrollTo(0, 2520);
+                sportsTextScroll.scrollTo(0, 2380);
                 frontOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
                 doorOfCar.setBackgroundResource(R.drawable.exclusivity_oval_pressed);
                 windowOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
@@ -84,7 +84,7 @@ public class SportsSeries extends Fragment {
         backOfCar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sportsTextScroll.scrollTo(0, 1682);
+                sportsTextScroll.scrollTo(0, 1620);
                 frontOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
                 doorOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
                 windowOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
