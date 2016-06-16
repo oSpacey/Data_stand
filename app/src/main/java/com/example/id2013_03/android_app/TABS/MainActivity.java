@@ -21,6 +21,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
+import android.os.PowerManager;
+
 import com.example.id2013_03.android_app.R;
 import com.example.id2013_03.android_app.USER_LOGIN.Login;
 
@@ -28,7 +30,10 @@ import fr.castorflex.android.verticalviewpager.VerticalViewPager;
 
 /*
      ---------------------------------------------------------------------------------------------------------------------------
-                                            Main class for this section
+                                             Main class for this section
+
+                                        This extends the custom activity MAIN_Base
+                                        which is used to calculate user inactivity
      ---------------------------------------------------------------------------------------------------------------------------
 */
 public class MainActivity extends MAIN_Base {
@@ -53,8 +58,7 @@ public class MainActivity extends MAIN_Base {
 
     Button logoBtn;
 
-
-/*
+    /*
      ---------------------------------------------------------------------------------------------------------------------------
                                     Creating the layout for the page
                                 The layout hold all the graphical contents
@@ -144,15 +148,41 @@ public class MainActivity extends MAIN_Base {
             }
         });
 
+/*
+     ---------------------------------------------------------------------------------------------------------------------------
+                            Finding the View Pager... This is the view inside each tab layout
+
+                            View Pager set to a custom adapter this is for the views on each page
+                                                 of the tab layout
+
+                            Setting the off screen limit - This stops the pages from swapping once
+                            the page has been changed to a different tab... DO NOT REMOVE THIS
+     ---------------------------------------------------------------------------------------------------------------------------
+*/
+
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         viewPager.setAdapter(new CustomAdapter(getSupportFragmentManager(), getApplicationContext()));
         viewPager.setOffscreenPageLimit(5);
 
-
-
-
+/*
+     ---------------------------------------------------------------------------------------------------------------------------
+                            Finding the tabLayout and then setting this up with the viewpager
+     ---------------------------------------------------------------------------------------------------------------------------
+*/
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         tabLayout.setupWithViewPager(viewPager);
+
+/*
+     ---------------------------------------------------------------------------------------------------------------------------
+                            Operations that happen when the tab is selected, reselected and
+                                                    unselected.
+
+                            These all have the same code for a reason! This code makes it so
+                            that if the users leaves one of the pages that also implement a
+                            scroll down function, the scroll down page will reset to the top
+                            of the page rather then being stuck where it was last left off.
+     ---------------------------------------------------------------------------------------------------------------------------
+*/
 
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
@@ -228,13 +258,57 @@ public class MainActivity extends MAIN_Base {
     }
 
 
-    private class CustomAdapter extends FragmentStatePagerAdapter {
-        private String fragments[] = {"", "", "", "", ""};
+/*
+     ---------------------------------------------------------------------------------------------------------------------------
+                            This is the Custom adapter that the View pager is set up with...
 
+                            This allows for full customisation on what is show for each "Tab"
+                                            that the users can see
+     ---------------------------------------------------------------------------------------------------------------------------
+*/
+
+    private class CustomAdapter extends FragmentStatePagerAdapter {
+
+/*
+     ---------------------------------------------------------------------------------------------------------------------------
+                            Creating a private string... This resembles all of the "text"
+                                    that says the name for each of the pages
+
+                                       These are left blank intentionally
+
+                               If the names do get changed please go to the file:
+                                            activity_main.xml
+                                As this is where the names for each tab is stored...
+                               They are stored here as this is the only way to change
+                               the font style of the text... It is impossible to change
+                                         the font style using this setup
+     ---------------------------------------------------------------------------------------------------------------------------
+*/
+        private String fragments[] = {"", "", "", "", ""};
+/*
+     ---------------------------------------------------------------------------------------------------------------------------
+                                Calling the necessary functions for the adapter to work
+     ---------------------------------------------------------------------------------------------------------------------------
+*/
         public CustomAdapter(FragmentManager supportFragmentManager, Context applicationContext) {
             super(supportFragmentManager);
         }
+/*
+     ---------------------------------------------------------------------------------------------------------------------------
+                                     These are the "classes" for each tab setup...
+                                For the amount of tabs you want you need to place them here
 
+                                0 - Is the class of the first tab to be displayed
+
+                            4 - ** for now (can be changed) ** is the very last tab to be displayed
+
+                            Each number holds a new class... For every new class a layout is attached.
+                           This is then what you can see once you select each of the tabs from the menu
+
+                            default - returning null, this is needed as otherwise the app will crash
+                                      and the tabs will not work as intended
+     ---------------------------------------------------------------------------------------------------------------------------
+*/
         @Override
         public Fragment getItem(int position) {
             switch (position) {
@@ -253,12 +327,21 @@ public class MainActivity extends MAIN_Base {
             }
         }
 
-
+/*
+     ---------------------------------------------------------------------------------------------------------------------------
+                                            Getting the amount of tabs wanted
+                        This is called from the private string created at the beginning of this adapter
+     ---------------------------------------------------------------------------------------------------------------------------
+*/
         @Override
         public int getCount() {
             return fragments.length;
         }
-
+/*
+     ---------------------------------------------------------------------------------------------------------------------------
+                                    Setting the page title depending on the position
+     ---------------------------------------------------------------------------------------------------------------------------
+*/
         @Override
         public CharSequence getPageTitle(int position) {
             return fragments[position];
