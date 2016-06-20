@@ -71,12 +71,12 @@ public class User_PickCar extends Activity{
 
         // Placing the right view id for the expandable list that was created within the xml file
         expandablelistView = (ExpandableListView)findViewById(R.id.expandableListView1);
-        // Finally taking the explandable list and creating a new adapter...
+        // Finally taking the expandable list and creating a new adapter...
         // This takes in the parent list which is the headings for the drop down menus
         // it also takes the parent list items which are the sub headings that can also take
         // the users to the new Main activities
         final ExpandableListAdapter expListAdapter = new ListAdapter(this, ParentList, ParentListItems);
-        // Setting the adapter with the variable expandablelistView variable
+        // Setting the adapter with the variable expandable list View variable
         expandablelistView.setAdapter(expListAdapter);
         // Setting the on click listener for the menu... This on click is for opening the main menu and
         // also for once the child objects are clicked and what they should do once they have been clicked

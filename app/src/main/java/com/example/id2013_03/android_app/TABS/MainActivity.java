@@ -21,8 +21,6 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
-import android.os.PowerManager;
-
 import com.example.id2013_03.android_app.R;
 import com.example.id2013_03.android_app.USER_LOGIN.Login;
 

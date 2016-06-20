@@ -17,9 +17,7 @@ import com.example.id2013_03.android_app.Exclusivity_TABS.MAIN.MSO;
 import com.example.id2013_03.android_app.Exclusivity_TABS.MAIN.MclarenF1;
 import com.example.id2013_03.android_app.R;
 
-/**
- * Created by ID2013-03 on 09/05/2016.
- */
+
 public class Exclusivity extends Fragment {
     CustomViewPager viewPager;
 
