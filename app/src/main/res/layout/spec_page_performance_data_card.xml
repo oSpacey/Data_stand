@@ -37,38 +37,48 @@
                     android:scaleType="fitXY"
                     android:src="@drawable/tech_performance_data" />
 
-                <android.support.design.widget.FloatingActionButton
+
+                <ImageView
                     android:id="@+id/acceleration_fab"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginRight="12dp"
                     android:layout_marginTop="73dp"
-                    android:src="@drawable/spec_add" />
+                    android:background="@drawable/spec_main_oval"
+                    android:elevation="10dp"
+                    android:src="@mipmap/add_btn"
+                    />
 
-                <android.support.design.widget.FloatingActionButton
+                <ImageView
                     android:id="@+id/braking_fab"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginRight="12dp"
                     android:layout_marginTop="351dp"
-                    android:src="@drawable/spec_add" />
+                    android:background="@drawable/spec_main_oval"
+                    android:elevation="10dp"
+                    android:src="@mipmap/add_btn"
+                    />
 
-                <android.support.design.widget.FloatingActionButton
+                <ImageView
                     android:id="@+id/efficiency_fab"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginRight="12dp"
                     android:layout_marginTop="577dp"
-                    android:src="@drawable/spec_add" />
+                    android:background="@drawable/spec_main_oval"
+                    android:elevation="10dp"
+                    android:src="@mipmap/add_btn"
+                    />
 
 
             </RelativeLayout>

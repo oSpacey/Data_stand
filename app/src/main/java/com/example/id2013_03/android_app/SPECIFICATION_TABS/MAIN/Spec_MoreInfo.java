@@ -59,12 +59,12 @@ public class Spec_MoreInfo extends Fragment {
     Button rrp_btn;
     Button options_btn;
 
-    FloatingActionButton powertrain_fab;
-    FloatingActionButton brakes_fab;
-    FloatingActionButton body_fab;
-    FloatingActionButton acceleration_fab;
-    FloatingActionButton braking_fab;
-    FloatingActionButton efficiency_fab;
+    ImageView powertrain_fab;
+    ImageView brakes_fab;
+    ImageView body_fab;
+    ImageView acceleration_fab;
+    ImageView braking_fab;
+    ImageView efficiency_fab;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.specification_more_info, container, false);
@@ -103,12 +103,12 @@ public class Spec_MoreInfo extends Fragment {
         rrp_btn = (Button) rootView.findViewById(R.id.RRP_btn);
         options_btn = (Button) rootView.findViewById(R.id.Options_btn);
 
-        powertrain_fab = (FloatingActionButton) rootView.findViewById(R.id.powertrain_fab);
-        brakes_fab = (FloatingActionButton) rootView.findViewById(R.id.brakes_fab);
-        body_fab = (FloatingActionButton) rootView.findViewById(R.id.body_fab);
-        acceleration_fab = (FloatingActionButton) rootView.findViewById(R.id.acceleration_fab);
-        braking_fab = (FloatingActionButton) rootView.findViewById(R.id.braking_fab);
-        efficiency_fab = (FloatingActionButton) rootView.findViewById(R.id.efficiency_fab);
+        powertrain_fab = (ImageView) rootView.findViewById(R.id.powertrain_fab);
+        brakes_fab = (ImageView) rootView.findViewById(R.id.brakes_fab);
+        body_fab = (ImageView) rootView.findViewById(R.id.body_fab);
+        acceleration_fab = (ImageView) rootView.findViewById(R.id.acceleration_fab);
+        braking_fab = (ImageView) rootView.findViewById(R.id.braking_fab);
+        efficiency_fab = (ImageView) rootView.findViewById(R.id.efficiency_fab);
 
 
 

@@ -20,6 +20,8 @@ public class Powertrain_Content extends Fragment {
 
     ScrollView powerScroll;
 
+    int countBtn = 0;
+
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.powertrain_content, container, false);
@@ -37,11 +39,22 @@ public class Powertrain_Content extends Fragment {
         engineBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                powerScroll.scrollTo(0, 840);
-                engineBtn.setBackgroundResource(R.drawable.exclusivity_oval_pressed);
-                transmissionBtn.setBackgroundResource(R.drawable.exclusivity_oval);
-                exhaustBtn.setBackgroundResource(R.drawable.exclusivity_oval);
-                lubricationBtn.setBackgroundResource(R.drawable.exclusivity_oval);
+                if(countBtn == 0) {
+                    powerScroll.scrollTo(0, 840);
+                    engineBtn.setBackgroundResource(R.drawable.exclusivity_oval_pressed);
+                    transmissionBtn.setBackgroundResource(R.drawable.exclusivity_oval);
+                    exhaustBtn.setBackgroundResource(R.drawable.exclusivity_oval);
+                    lubricationBtn.setBackgroundResource(R.drawable.exclusivity_oval);
+                    countBtn++;
+                }else{
+                    powerScroll.scrollTo(0, 0);
+                    engineBtn.setBackgroundResource(R.drawable.exclusivity_oval);
+                    transmissionBtn.setBackgroundResource(R.drawable.exclusivity_oval);
+                    exhaustBtn.setBackgroundResource(R.drawable.exclusivity_oval);
+                    lubricationBtn.setBackgroundResource(R.drawable.exclusivity_oval);
+                    countBtn--;
+                }
+
 
             }
         });
@@ -49,33 +62,66 @@ public class Powertrain_Content extends Fragment {
         transmissionBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(countBtn == 0) {
                 powerScroll.scrollTo(0, 1678);
                 engineBtn.setBackgroundResource(R.drawable.exclusivity_oval);
                 transmissionBtn.setBackgroundResource(R.drawable.exclusivity_oval_pressed);
                 exhaustBtn.setBackgroundResource(R.drawable.exclusivity_oval);
                 lubricationBtn.setBackgroundResource(R.drawable.exclusivity_oval);
+                countBtn++;
+                }else{
+
+                powerScroll.scrollTo(0, 0);
+                engineBtn.setBackgroundResource(R.drawable.exclusivity_oval);
+                transmissionBtn.setBackgroundResource(R.drawable.exclusivity_oval);
+                exhaustBtn.setBackgroundResource(R.drawable.exclusivity_oval);
+                lubricationBtn.setBackgroundResource(R.drawable.exclusivity_oval);
+                countBtn--;
+                }
             }
         });
 
         exhaustBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(countBtn == 0) {
                 powerScroll.scrollTo(0, 2523);
                 engineBtn.setBackgroundResource(R.drawable.exclusivity_oval);
                 transmissionBtn.setBackgroundResource(R.drawable.exclusivity_oval);
                 exhaustBtn.setBackgroundResource(R.drawable.exclusivity_oval_pressed);
                 lubricationBtn.setBackgroundResource(R.drawable.exclusivity_oval);
+                countBtn++;
+            }else{
+
+                powerScroll.scrollTo(0, 0);
+                engineBtn.setBackgroundResource(R.drawable.exclusivity_oval);
+                transmissionBtn.setBackgroundResource(R.drawable.exclusivity_oval);
+                exhaustBtn.setBackgroundResource(R.drawable.exclusivity_oval);
+                lubricationBtn.setBackgroundResource(R.drawable.exclusivity_oval);
+                countBtn--;
+                }
             }
         });
 
         lubricationBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(countBtn == 0) {
                 powerScroll.scrollTo(0, 3360);
                 engineBtn.setBackgroundResource(R.drawable.exclusivity_oval);
                 transmissionBtn.setBackgroundResource(R.drawable.exclusivity_oval);
                 exhaustBtn.setBackgroundResource(R.drawable.exclusivity_oval);
                 lubricationBtn.setBackgroundResource(R.drawable.exclusivity_oval_pressed);
+                countBtn++;
+            }else{
+
+                powerScroll.scrollTo(0, 0);
+                engineBtn.setBackgroundResource(R.drawable.exclusivity_oval);
+                transmissionBtn.setBackgroundResource(R.drawable.exclusivity_oval);
+                exhaustBtn.setBackgroundResource(R.drawable.exclusivity_oval);
+                lubricationBtn.setBackgroundResource(R.drawable.exclusivity_oval);
+                countBtn--;
+            }
             }
         });
 
