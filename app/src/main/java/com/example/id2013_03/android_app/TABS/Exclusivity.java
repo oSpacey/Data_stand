@@ -37,7 +37,7 @@ public class Exclusivity extends Fragment {
 
     }
 
-
+//
     private class CustomAdapter extends FragmentStatePagerAdapter {
         private String fragments[] = {"", "", "", "", ""};
 
