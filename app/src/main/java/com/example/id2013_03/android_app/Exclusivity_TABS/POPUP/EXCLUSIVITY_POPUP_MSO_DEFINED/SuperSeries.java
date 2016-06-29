@@ -18,13 +18,13 @@ public class SuperSeries extends Fragment {
     ImageView backOfCar;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.defined_popup_super_series, container, false);
+        View superView = inflater.inflate(R.layout.defined_popup_super_series, container, false);
 
-        car01 = (ImageView)rootView.findViewById(R.id.car_01);
-        car02 = (ImageView)rootView.findViewById(R.id.car_02);
-        car03 = (ImageView)rootView.findViewById(R.id.car_03);
-        car04 = (ImageView)rootView.findViewById(R.id.car_04);
-        backOfCar = (ImageView)rootView.findViewById(R.id.super_back_of_car);
+        car01 = (ImageView)superView.findViewById(R.id.car_01);
+        car02 = (ImageView)superView.findViewById(R.id.car_02);
+        car03 = (ImageView)superView.findViewById(R.id.car_03);
+        car04 = (ImageView)superView.findViewById(R.id.car_04);
+        backOfCar = (ImageView)superView.findViewById(R.id.super_back_of_car);
 
         car01.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,6 +85,6 @@ public class SuperSeries extends Fragment {
                 backOfCar.setBackgroundResource(R.drawable.exclusivity_oval_pressed);
             }
         });
-        return rootView;
+        return superView;
     }
 }

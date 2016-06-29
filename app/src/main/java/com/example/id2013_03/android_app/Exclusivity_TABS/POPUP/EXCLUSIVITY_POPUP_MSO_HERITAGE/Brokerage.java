@@ -11,9 +11,9 @@ import com.example.id2013_03.android_app.R;
 
 public class Brokerage extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.heritage_brokerage, container, false);
+        View BrokerageView = inflater.inflate(R.layout.heritage_brokerage, container, false);
 
-        return rootView;
+        return BrokerageView;
     }
 
 }

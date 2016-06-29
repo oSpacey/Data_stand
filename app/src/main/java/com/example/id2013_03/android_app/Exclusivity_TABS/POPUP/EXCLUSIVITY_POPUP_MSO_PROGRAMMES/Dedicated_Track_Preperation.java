@@ -11,9 +11,9 @@ import com.example.id2013_03.android_app.R;
 
 public class Dedicated_Track_Preperation extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.programmes_popup_track_prep, container, false);
+        View trackView = inflater.inflate(R.layout.programmes_popup_track_prep, container, false);
 
-        return rootView;
+        return trackView;
     }
 
 }

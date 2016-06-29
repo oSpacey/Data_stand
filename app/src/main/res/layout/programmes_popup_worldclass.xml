@@ -3,8 +3,13 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <ImageView
-        android:id="@+id/bespoke_title"
+        android:id="@+id/exclusivity_programmes_worldclass_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-5dp"
@@ -12,10 +17,10 @@
 
 
     <ImageView
-        android:id="@+id/mso_sports_text"
+        android:id="@+id/exclusivity_programmes_worldclass_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/bespoke_title"
+        android:layout_below="@+id/exclusivity_programmes_worldclass_title"
         android:layout_marginLeft="-17dp"
         android:layout_marginTop="0dp"
         android:src="@drawable/mso_programmes_world_class_text"/>
@@ -29,3 +34,6 @@
         android:src="@drawable/mso_programmes_world_class_image" />
 
 </RelativeLayout>
+
+
+    </RelativeLayout>

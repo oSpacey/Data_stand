@@ -21,26 +21,26 @@ public class ExclusivityMain extends Fragment {
     ImageView msoBtn;
     ImageView factoryBtn;
 
-    ViewPager viewPager;
+    ViewPager vert_view;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.exclusivitymain, container, false);
 
-        viewPager = (ViewPager)getActivity().findViewById(R.id.vert_view);
+        vert_view = (ViewPager)getActivity().findViewById(R.id.vert_view);
         msoBtn = (ImageView)rootView.findViewById(R.id.msoBtn);
         factoryBtn = (ImageView)rootView.findViewById(R.id.factoryBtn);
 
         msoBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewPager.setCurrentItem(1);
+                vert_view.setCurrentItem(1);
             }
         });
 
         factoryBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewPager.setCurrentItem(3);
+                vert_view.setCurrentItem(3);
             }
         });
 

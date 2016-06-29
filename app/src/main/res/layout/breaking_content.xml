@@ -11,7 +11,7 @@
         android:src="@drawable/braking_title"/>
 
     <ImageView
-        android:id="@+id/mso_sports_text"
+        android:id="@+id/braking_main_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/braking_title"

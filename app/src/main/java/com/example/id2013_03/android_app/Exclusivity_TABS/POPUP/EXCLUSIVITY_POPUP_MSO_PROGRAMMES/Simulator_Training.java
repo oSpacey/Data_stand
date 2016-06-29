@@ -11,9 +11,9 @@ import com.example.id2013_03.android_app.R;
 
 public class Simulator_Training extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.programmes_popup_simulator, container, false);
+        View simView = inflater.inflate(R.layout.programmes_popup_simulator, container, false);
 
-        return rootView;
+        return simView;
     }
 
 }

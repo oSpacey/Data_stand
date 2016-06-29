@@ -11,9 +11,9 @@ import com.example.id2013_03.android_app.R;
 
 public class Limitless_Customisation extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.bespoke_popup_customisation, container, false);
+        View limitCustomView = inflater.inflate(R.layout.bespoke_popup_customisation, container, false);
 
-        return rootView;
+        return limitCustomView;
     }
 
 }

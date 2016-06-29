@@ -11,9 +11,9 @@ import com.example.id2013_03.android_app.R;
 
 public class Fitness_Programme extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.programmes_popup_fitness, container, false);
+        View fitnessView = inflater.inflate(R.layout.programmes_popup_fitness, container, false);
 
-        return rootView;
+        return fitnessView;
     }
 
 }

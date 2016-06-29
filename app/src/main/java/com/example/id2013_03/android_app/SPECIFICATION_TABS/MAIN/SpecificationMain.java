@@ -17,18 +17,18 @@ import fr.castorflex.android.verticalviewpager.VerticalViewPager;
 public class SpecificationMain extends Fragment {
     ImageView moreBtn;
 
-    VerticalViewPager viewPager;
+    VerticalViewPager vert_view_spec;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.specification_main, container, false);
 
-        viewPager = (VerticalViewPager) getActivity().findViewById(R.id.vert_view_spec);
+        vert_view_spec = (VerticalViewPager) getActivity().findViewById(R.id.vert_view_spec);
         moreBtn = (ImageView)rootView.findViewById(R.id.moreBtn);
 
         moreBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewPager.setCurrentItem(1, true);
+                vert_view_spec.setCurrentItem(1, true);
             }
         });
 

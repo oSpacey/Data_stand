@@ -3,8 +3,13 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <ImageView
-        android:id="@+id/heritage_title"
+        android:id="@+id/exclusivity_limited_lemans_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-5dp"
@@ -12,10 +17,10 @@
 
 
     <ImageView
-        android:id="@+id/mso_sports_text"
+        android:id="@+id/exclusivity_limited_lemans_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/heritage_title"
+        android:layout_below="@+id/exclusivity_limited_lemans_title"
         android:layout_marginLeft="-17dp"
         android:layout_marginTop="0dp"
         android:src="@drawable/mso_limited_le_mans"/>
@@ -29,3 +34,6 @@
         android:src="@drawable/mso_limited_le_mans_image" />
 
 </RelativeLayout>
+
+
+    </RelativeLayout>

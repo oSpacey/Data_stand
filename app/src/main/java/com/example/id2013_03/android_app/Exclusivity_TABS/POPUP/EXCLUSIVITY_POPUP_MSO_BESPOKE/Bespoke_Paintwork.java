@@ -11,9 +11,9 @@ import com.example.id2013_03.android_app.R;
 
 public class Bespoke_Paintwork extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.bespoke_popup_paintwork, container, false);
+        View paintworkView = inflater.inflate(R.layout.bespoke_popup_paintwork, container, false);
 
-        return rootView;
+        return paintworkView;
     }
 
 }

@@ -1,7 +1,9 @@
 package com.example.id2013_03.android_app.Exclusivity_TABS.POPUP.EXCLUSIVITY_POPUP_MSO_BESPOKE;
 
+import android.app.KeyguardManager;
 import android.content.Context;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -43,15 +45,19 @@ public class Mso_Bespoke_Popup extends POPUP_Base {
             @Override
             public void onClick(View v) {
                 finish();
+                getSupportFragmentManager().popBackStack();
+                closeContextMenu();
+                closeOptionsMenu();
+                finishActivity(this.hashCode());
             }
         });
 
 
-        viewPager = (ViewPager) findViewById(R.id.exclusivity_pop_View);
+        viewPager = (ViewPager) findViewById(R.id.exclusivity_Bespoke_pop_View);
         viewPager.setAdapter(new CustomAdapter(getSupportFragmentManager(), getApplicationContext()));
-        viewPager.setOffscreenPageLimit(2);
+        viewPager.setOffscreenPageLimit(5);
 
-        tabLayout = (TabLayout) findViewById(R.id.exclusivity_pop_Tabs);
+        tabLayout = (TabLayout) findViewById(R.id.exclusivity_Bespoke_pop_Tabs);
         tabLayout.setupWithViewPager(viewPager);
 
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {

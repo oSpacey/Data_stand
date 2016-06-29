@@ -13,9 +13,9 @@ import com.example.id2013_03.android_app.R;
  */
 public class Custom_Interior_Tailoring extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.bespoke_popup_custom_interior, container, false);
+        View interiorView = inflater.inflate(R.layout.bespoke_popup_custom_interior, container, false);
 
-        return rootView;
+        return interiorView;
     }
 
 }

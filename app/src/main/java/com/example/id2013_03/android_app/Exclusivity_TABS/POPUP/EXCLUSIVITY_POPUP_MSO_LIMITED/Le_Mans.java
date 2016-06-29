@@ -11,9 +11,9 @@ import com.example.id2013_03.android_app.R;
 
 public class Le_Mans extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.limited_popup_le_mans, container, false);
+        View leMansView = inflater.inflate(R.layout.limited_popup_le_mans, container, false);
 
-        return rootView;
+        return leMansView;
     }
 
 }

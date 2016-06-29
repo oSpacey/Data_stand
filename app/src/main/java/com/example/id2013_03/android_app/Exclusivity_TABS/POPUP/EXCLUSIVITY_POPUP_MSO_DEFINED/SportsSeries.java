@@ -23,15 +23,15 @@ public class SportsSeries extends Fragment {
     ScrollView sportsTextScroll;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.defined_popup_sports_series, container, false);
+        View sportsView = inflater.inflate(R.layout.defined_popup_sports_series, container, false);
 
-        frontOfCar = (ImageView)rootView.findViewById(R.id.front_of_car);
-        doorOfCar = (ImageView)rootView.findViewById(R.id.door_of_car);
-        windowOfCar = (ImageView)rootView.findViewById(R.id.window_of_car);
-        roofOfCar = (ImageView)rootView.findViewById(R.id.roof_of_car);
-        backOfCar = (ImageView)rootView.findViewById(R.id.back_of_car);
+        frontOfCar = (ImageView)sportsView.findViewById(R.id.front_of_car);
+        doorOfCar = (ImageView)sportsView.findViewById(R.id.door_of_car);
+        windowOfCar = (ImageView)sportsView.findViewById(R.id.window_of_car);
+        roofOfCar = (ImageView)sportsView.findViewById(R.id.roof_of_car);
+        backOfCar = (ImageView)sportsView.findViewById(R.id.back_of_car);
 
-        sportsTextScroll = (ScrollView)rootView.findViewById(R.id.mso_sports_text);
+        sportsTextScroll = (ScrollView)sportsView.findViewById(R.id.mso_sports_text);
 
         frontOfCar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,7 +95,7 @@ public class SportsSeries extends Fragment {
         });
 
 
-        return rootView;
+        return sportsView;
     }
 
 

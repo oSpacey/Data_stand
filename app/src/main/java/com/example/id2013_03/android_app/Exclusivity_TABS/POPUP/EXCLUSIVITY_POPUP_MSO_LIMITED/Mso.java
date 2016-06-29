@@ -11,9 +11,9 @@ import com.example.id2013_03.android_app.R;
 
 public class Mso extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.limited_popup_mso, container, false);
+        View msoView = inflater.inflate(R.layout.limited_popup_mso, container, false);
 
-        return rootView;
+        return msoView;
     }
 
 }
