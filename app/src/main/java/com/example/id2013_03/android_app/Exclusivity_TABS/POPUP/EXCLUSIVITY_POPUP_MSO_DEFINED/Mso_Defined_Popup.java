@@ -1,12 +1,17 @@
 package com.example.id2013_03.android_app.Exclusivity_TABS.POPUP.EXCLUSIVITY_POPUP_MSO_DEFINED;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Process;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.ImageView;
@@ -44,9 +49,6 @@ public class Mso_Defined_Popup extends POPUP_Base {
             public void onClick(View v) {
                 finish();
                 getSupportFragmentManager().popBackStack();
-                closeContextMenu();
-                closeOptionsMenu();
-                finishActivity(this.hashCode());
             }
         });
 

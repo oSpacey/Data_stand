@@ -5,11 +5,13 @@ package com.example.id2013_03.android_app.TABS;
                                             Imported necessary functions
      ---------------------------------------------------------------------------------------------------------------------------
 */
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.id2013_03.android_app.R;
 
@@ -19,6 +21,7 @@ import com.example.id2013_03.android_app.R;
      ---------------------------------------------------------------------------------------------------------------------------
 */
 public class Overview extends Fragment {
+
 
 /*
      ---------------------------------------------------------------------------------------------------------------------------

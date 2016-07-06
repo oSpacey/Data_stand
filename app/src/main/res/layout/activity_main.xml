@@ -79,26 +79,10 @@
         android:textColor="@color/white" />
 
 
-    <TextView
-        android:layout_width="217dp"
-        android:layout_height="43dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="LOGO"
-        android:textSize="30dp"
-        android:id="@+id/textView"
-        android:layout_marginRight="30dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="-8dp"
-        android:layout_alignBottom="@+id/brochure_text"
-        android:layout_alignRight="@+id/logo_button"
-        android:layout_alignEnd="@+id/logo_button"
-        android:elevation="3dp"
-        android:paddingLeft="70dp" />
-
-    <Button
+    <ImageView
         android:id="@+id/logo_button"
-        android:layout_width="225dp"
-        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/viewPager"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
@@ -108,6 +92,7 @@
         android:layout_marginTop="10dp"
         android:textColor="@color/darkGrey"
         android:textSize="30dp"
+        android:src="@drawable/logo"
         />
 
     <android.support.v4.view.ViewPager
@@ -117,8 +102,5 @@
         android:layout_below="@+id/tabLayout"
         android:layout_centerHorizontal="true"
         tools:context=".TABS.MainActivity" />
-
-
-
 
 </RelativeLayout>

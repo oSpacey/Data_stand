@@ -2,6 +2,7 @@ package com.example.id2013_03.android_app.Exclusivity_TABS.POPUP.EXCLUSIVITY_POP
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +23,12 @@ public class SportsSeries extends Fragment {
 
     ScrollView sportsTextScroll;
 
+    Toast toast;
+
+    int frontCountBtn = 0;
+    int doorCountBtn = 0;
+    int backCountBtn = 0;
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View sportsView = inflater.inflate(R.layout.defined_popup_sports_series, container, false);
 
@@ -36,47 +43,74 @@ public class SportsSeries extends Fragment {
         frontOfCar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sportsTextScroll.scrollTo(0, 810);
-                frontOfCar.setBackgroundResource(R.drawable.exclusivity_oval_pressed);
-                doorOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
-                windowOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
-                roofOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
-                backOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
+                if(frontCountBtn == 0) {
+                    sportsTextScroll.scrollTo(0, 810);
+                    frontOfCar.setBackgroundResource(R.drawable.exclusivity_oval_pressed);
+                    doorOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
+                    windowOfCar.setBackgroundResource(R.drawable.main_ovals);
+                    roofOfCar.setBackgroundResource(R.drawable.main_ovals);
+                    backOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
+                    frontCountBtn++;
+                }else{
+                    sportsTextScroll.scrollTo(0, 0);
+                    frontOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
+                    doorOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
+                    windowOfCar.setBackgroundResource(R.drawable.main_ovals);
+                    roofOfCar.setBackgroundResource(R.drawable.main_ovals);
+                    backOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
+                    frontCountBtn--;
+                }
             }
         });
 
         doorOfCar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(doorCountBtn == 0) {
                 sportsTextScroll.scrollTo(0, 2380);
                 frontOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
                 doorOfCar.setBackgroundResource(R.drawable.exclusivity_oval_pressed);
-                windowOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
-                roofOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
+                windowOfCar.setBackgroundResource(R.drawable.main_ovals);
+                roofOfCar.setBackgroundResource(R.drawable.main_ovals);
                 backOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
+                    doorCountBtn++;
+            }else{
+                    sportsTextScroll.scrollTo(0, 0);
+                    frontOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
+                    doorOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
+                    windowOfCar.setBackgroundResource(R.drawable.main_ovals);
+                    roofOfCar.setBackgroundResource(R.drawable.main_ovals);
+                    backOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
+                    doorCountBtn--;
+            }
             }
         });
 
         windowOfCar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity().getApplicationContext(), "Not yet implemented", Toast.LENGTH_LONG).show();
+                toast= Toast.makeText(getActivity().getApplicationContext(),getString(R.string.notYetImplemented), Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER, 0, 0);
+                toast.show();
                 frontOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
                 doorOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
-                windowOfCar.setBackgroundResource(R.drawable.exclusivity_oval_pressed);
-                roofOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
+                windowOfCar.setBackgroundResource(R.drawable.main_ovals);
+                roofOfCar.setBackgroundResource(R.drawable.main_ovals);
                 backOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
             }
+
         });
 
         roofOfCar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity().getApplicationContext(), "Not yet implemented", Toast.LENGTH_LONG).show();
+                toast= Toast.makeText(getActivity().getApplicationContext(),getString(R.string.notYetImplemented), Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER, 0, 0);
+                toast.show();
                 frontOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
                 doorOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
-                windowOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
-                roofOfCar.setBackgroundResource(R.drawable.exclusivity_oval_pressed);
+                windowOfCar.setBackgroundResource(R.drawable.main_ovals);
+                roofOfCar.setBackgroundResource(R.drawable.main_ovals);
                 backOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
             }
         });
@@ -84,12 +118,23 @@ public class SportsSeries extends Fragment {
         backOfCar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(backCountBtn == 0){
                 sportsTextScroll.scrollTo(0, 1620);
                 frontOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
                 doorOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
-                windowOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
-                roofOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
+                windowOfCar.setBackgroundResource(R.drawable.main_ovals);
+                roofOfCar.setBackgroundResource(R.drawable.main_ovals);
                 backOfCar.setBackgroundResource(R.drawable.exclusivity_oval_pressed);
+                    backCountBtn++;
+            }else{
+                sportsTextScroll.scrollTo(0, 0);
+                frontOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
+                doorOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
+                windowOfCar.setBackgroundResource(R.drawable.main_ovals);
+                roofOfCar.setBackgroundResource(R.drawable.main_ovals);
+                backOfCar.setBackgroundResource(R.drawable.exclusivity_oval);
+                    backCountBtn--;
+            }
 
             }
         });

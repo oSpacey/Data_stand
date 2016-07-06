@@ -19,10 +19,13 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.id2013_03.android_app.R;
 import com.example.id2013_03.android_app.USER_LOGIN.Login;
+
+import org.w3c.dom.Text;
 
 import fr.castorflex.android.verticalviewpager.VerticalViewPager;
 
@@ -54,7 +57,7 @@ public class MainActivity extends MAIN_Base {
 
     Typeface custom_font;
 
-    Button logoBtn;
+    ImageView logoBtn;
 
     /*
      ---------------------------------------------------------------------------------------------------------------------------
@@ -97,14 +100,16 @@ public class MainActivity extends MAIN_Base {
         overTx = (TextView) findViewById(R.id.over_text);
         overTx.setTypeface(custom_font);
 
-        exclusiveTx = (TextView) findViewById(R.id.over_text);
+        exclusiveTx = (TextView) findViewById(R.id.exclusivity_text);
         exclusiveTx.setTypeface(custom_font);
 
-        heritageTx = (TextView) findViewById(R.id.over_text);
+        heritageTx = (TextView) findViewById(R.id.heritage_text);
         heritageTx.setTypeface(custom_font);
 
-        brochureTx = (TextView) findViewById(R.id.over_text);
+        brochureTx = (TextView) findViewById(R.id.brochure_text);
         brochureTx.setTypeface(custom_font);
+
+
 
 /*
      ---------------------------------------------------------------------------------------------------------------------------
@@ -128,7 +133,7 @@ public class MainActivity extends MAIN_Base {
      ---------------------------------------------------------------------------------------------------------------------------
 */
 
-        logoBtn = (Button)findViewById(R.id.logo_button);
+        logoBtn = (ImageView)findViewById(R.id.logo_button);
         logoBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -186,70 +191,17 @@ public class MainActivity extends MAIN_Base {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 viewPager.setCurrentItem(tab.getPosition());
-                viewPager.onRestoreInstanceState(savedInstanceState);
-
-                vertSpec = (VerticalViewPager) findViewById(R.id.vert_view_spec);
-                vertEx = (ViewPager)findViewById(R.id.vert_view);
-                NestedScrollView nestScroll = (NestedScrollView)findViewById(R.id.child_scroll);
-
-                int vertSpecPage = viewPager.getCurrentItem();
-
-                if (vertSpecPage == 0) {
-                    vertSpec.setCurrentItem(0);
-                    nestScroll.scrollTo(0,0);
-                }
-
-                if(vertSpecPage == 2){
-                    vertEx.setCurrentItem(0);
-                }else
-                    return;
 
             }
 
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
                 viewPager.setCurrentItem(tab.getPosition());
-                viewPager.onRestoreInstanceState(savedInstanceState);
-                vertSpec = (VerticalViewPager) findViewById(R.id.vert_view_spec);
-                vertEx = (ViewPager)findViewById(R.id.vert_view);
-                NestedScrollView nestScroll = (NestedScrollView)findViewById(R.id.child_scroll);
-
-                int vertSpecPage = viewPager.getCurrentItem();
-
-                if (vertSpecPage == 0) {
-                    vertSpec.setCurrentItem(0);
-                    nestScroll.scrollTo(0,0);
-                }
-
-                if(vertSpecPage == 2){
-                    vertEx.setCurrentItem(0);
-                }else
-                    return;
             }
 
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
                 viewPager.setCurrentItem(tab.getPosition());
-                vertSpec = (VerticalViewPager) findViewById(R.id.vert_view_spec);
-                vertEx = (ViewPager)findViewById(R.id.vert_view);
-                NestedScrollView nestScroll = (NestedScrollView)findViewById(R.id.child_scroll);
-
-                int vertSpecPage = viewPager.getCurrentItem();
-
-                if (vertSpecPage == 0) {
-                    vertSpec.setCurrentItem(0);
-                    nestScroll.scrollTo(0,0);
-                }
-
-                if(vertSpecPage == 2){
-                    vertEx.setCurrentItem(0);
-                }else
-                    return;
-
-
-
-
-
             }
 
         });

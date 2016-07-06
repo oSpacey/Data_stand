@@ -40,8 +40,8 @@
 
                 <ImageView
                     android:id="@+id/acceleration_fab"
-                    android:layout_width="62dp"
-                    android:layout_height="62dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
@@ -54,8 +54,8 @@
 
                 <ImageView
                     android:id="@+id/braking_fab"
-                    android:layout_width="62dp"
-                    android:layout_height="62dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
@@ -68,8 +68,8 @@
 
                 <ImageView
                     android:id="@+id/efficiency_fab"
-                    android:layout_width="62dp"
-                    android:layout_height="62dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
